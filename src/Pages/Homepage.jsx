@@ -41,7 +41,7 @@ function Homepage()
                     {/* <Image position="absolute" top={["-10", "-10", "-20"]} left={["", "", "-8"]} src="https://www.wallpaperuse.com/wallp/56-561836_m.png" alt="img" /> */}
                 </Box>
                 <Box  bg="#2d3748" p="5px" w={["45%", "35%", "25%"]} m="20px auto 40px auto" rounded={["50%", "50%", "50%"]}>
-                    <Image boxShadow="xl" w="100%" rounded={["50%", "50%", "50%"]} src="https://res.cloudinary.com/dn2q6aoex/image/upload/v1671437856/_DSC0722_epk1ec.jpg" alt="img" />
+                    <Image boxShadow="xl" w="100%" rounded={["50%", "50%", "50%"]} src="https://res.cloudinary.com/dn2q6aoex/image/upload/v1673796974/Untitled-2_oklshb.jpg" alt="img" />
                 </Box>
             </Box>
         </Box>  
