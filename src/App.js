@@ -1,18 +1,13 @@
 import './App.css';
-import './home.css';
-import Navbar from './Pages/Navbar';
+import Navbar from './Components/Navbar.jsx';
 import "./Pages/Page.css";
 import Allroutes from "./Components/Allroutes"
-
 function App() {
     return (
       <div className='App'>
-        <div className="container">
           <Navbar />
-          <Allroutes />
-        </div>
+        <Allroutes />
       </div>
     );
 }
-
 export default App;

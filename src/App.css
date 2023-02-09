@@ -1,70 +1,484 @@
-.App {
+html{
+  scroll-behavior: smooth;
+}
+.App{
+  background: #0b1120;
+  color :#e0e6ee;
+}
+.About{
+  background-color: #0b1120;
   text-align: center;
+  color: #e0e6ee;
 }
+.Nav{
+  background: #0b1120;
+    color :#e0e6ee;
+    position: fixed;
+    width: 100%;
+}
+@media screen and (min-width: 0px) and (max-width:766px)
+{
+  .About
+  {
+    margin-top: 5%;
+    margin-bottom: 30%;
+    display: grid;
+    gap: 20px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  .buddy{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin: auto;
+  }
+  .optimus{
+    color :#e0e6ee;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+  }
+  .Bee{
+    margin-left: 2%;
+    padding: 10px;
+  }
 
-body{
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  .Nav{
+    display: inline;
+    padding: 10px;
+    position:fixed;
+    width: 100%;
+    text-align: center;
+  }
+  .Unicorn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  .HomeImage{
+    margin: auto;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .Ray{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+  }
+  .statImage{
+    width: auto;
+    height: 180px;
+  }
+  .bud{
+    color :#e0e6ee;
+    text-align: center;
+    background-image: url("https://img.freepik.com/free-vector/blue-luxury-gradient-gold-modern-abstract-design-background_343694-2751.jpg?w=1060&t=st=1675878501~exp=1675879101~hmac=b3073b1759a872e00863f00ff72705e07fa011b9f1c8658eb09614a3a3c3fa96");
+    background-size: cover;
+  }
+  .Tyson{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+  }
+  #skill{
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-right: 2%;
+  }
+  .OuterSkill{
+    display: inline;
+    gap: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  .skillgrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+  }
+  .skill_inside{
+    width: auto;
+      padding: 20px;
+      margin: auto;
+      margin-top: 2%;
+      box-shadow: rgba(161, 167, 153, 0.35) 0px 5px 15px;
+      cursor: pointer;
+      border-radius: 20px;
+  }
+  .skill_inside:hover{
+      border: 1px solid green;
+      color: #fee39e;
+      background-image: url("https://img.freepik.com/free-vector/blue-luxury-gradient-gold-modern-abstract-design-background_343694-2751.jpg?w=1060&t=st=1675878501~exp=1675879101~hmac=b3073b1759a872e00863f00ff72705e07fa011b9f1c8658eb09614a3a3c3fa96");
+      background-size: cover;
+      box-shadow: rgba(161, 167, 153, 0.35) 0px 5;
+      cursor: pointer;
   }
 }
 
-.container{
-  background-color: #13022C;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 15px;
-  background-color: #13022C;
-}
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  box-shadow: inset 0 0 3px rgb(185, 149, 209);
-  border-radius: 10px;
-  background-color: #13022C;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgb(195, 155, 216);
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(157, 140, 168);
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 768px) and (max-width:1024px)
+{
+  .About{
+    display: grid;
+    gap: 25px;
+    line-height: 30px;
+    padding: 20px;
+    font-size: 16px;
+    font-family: "IBM Plex Sans", "-apple-system", "BlinkMacSystemFont", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
-  to {
-    transform: rotate(360deg);
+  .abs{
+    font-weight: bold;
+    font-size: larger;
+    padding: 10px;
+  }
+  .buddy{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin: auto;
+  }
+  .optimus{
+ 
+    color :#e0e6ee;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+  }
+  .Bee{
+    margin-left: 3%;
+    padding: 20px;
+  }
+  .Nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+  }
+  .Unicorn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    /* margin-right: 20%; */
+  }
+  .Ray{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  .statImage{
+    width: auto;
+    height: 180px;
+  }
+  .bud{
+    color :#e0e6ee;
+    text-align: center;
+    background-image: url("https://img.freepik.com/free-vector/blue-luxury-gradient-gold-modern-abstract-design-background_343694-2751.jpg?w=1060&t=st=1675878501~exp=1675879101~hmac=b3073b1759a872e00863f00ff72705e07fa011b9f1c8658eb09614a3a3c3fa96");
+    background-size: cover;
+  }
+  .Tyson{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+  }
+  #skill{
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-right: 2%;
+  }
+  .OuterSkill{
+    display: inline;
+    gap: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  .skillgrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+  }
+  .skill_inside{
+    width: auto;
+      padding: 20px;
+      margin: auto;
+      margin-top: 2%;
+      box-shadow: rgba(161, 167, 153, 0.35) 0px 5px 15px;
+      cursor: pointer;
+      border-radius: 20px;
+  }
+  .skill_inside:hover{
+      border: 1px solid green;
+      color: #fee39e;
+      background-image: url("https://img.freepik.com/free-vector/blue-luxury-gradient-gold-modern-abstract-design-background_343694-2751.jpg?w=1060&t=st=1675878501~exp=1675879101~hmac=b3073b1759a872e00863f00ff72705e07fa011b9f1c8658eb09614a3a3c3fa96");
+      background-size: cover;
+      box-shadow: rgba(161, 167, 153, 0.35) 0px 5;
+      cursor: pointer;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width:1440px)
+{
+  .About{
+    margin-left: -5%;
+    width: auto;
+    display: flex;
+    font-family: "IBM Plex Sans", "-apple-system", "BlinkMacSystemFont", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  .abs{
+    padding: 30px;
+    margin-left: 21.8%;
+    margin-right: 22%;
+  }
+  .buddy{
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: -120%;
+    margin-top: 5%;
+  }
+  .optimus{
+  
+    color :#e0e6ee;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+  }
+  .Bee{
+    margin-left: 15%;
+    padding: 10px;
+  }
+  .Nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position:fixed;
+    width: 100%;
+  }
+  .Unicorn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  .Ray{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  .statImage{
+    width: auto;
+    height: 200px;
+  }
+  .bud{
+    color :#e0e6ee;
+    text-align: center;
+    background-image: url("https://img.freepik.com/free-vector/blue-luxury-gradient-gold-modern-abstract-design-background_343694-2751.jpg?w=1060&t=st=1675878501~exp=1675879101~hmac=b3073b1759a872e00863f00ff72705e07fa011b9f1c8658eb09614a3a3c3fa96");
+    background-size: cover;
+    padding: 20px;
+  }
+  .Tyson{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding: 10px;
+  }
+  #skill{
+    margin: auto;
+    margin-top: 25%;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-right: 2%;
+  }
+  .OuterSkill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  .skillgrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+  }
+  .skill_inside{
+    width: auto;
+      padding: 20px;
+      margin: auto;
+      margin-top: 2%;
+      box-shadow: rgba(161, 167, 153, 0.35) 0px 5px 15px;
+      cursor: pointer;
+      border-radius: 20px;
+  }
+  .skill_inside:hover{
+      border: 1px solid green;
+      color: #fee39e;
+      background-image: url("https://img.freepik.com/free-vector/blue-luxury-gradient-gold-modern-abstract-design-background_343694-2751.jpg?w=1060&t=st=1675878501~exp=1675879101~hmac=b3073b1759a872e00863f00ff72705e07fa011b9f1c8658eb09614a3a3c3fa96");
+      background-size: cover;
+      box-shadow: rgba(161, 167, 153, 0.35) 0px 5;
+      cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1441px) and (max-width:2560px)
+{
+  .About{
+    margin-top: 5%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
+    font-family: "IBM Plex Sans", "-apple-system", "BlinkMacSystemFont", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  .abs{
+    padding: 10px;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  .buddy{
+    width: 800px;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: -50%;
+    margin-top: 15%;
+  }
+  .optimus{
+    color :#e0e6ee;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+  }
+  .Bee{
+    margin-left: 25%;
+    padding: 10px;
+  }
+  .Nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .Unicorn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-right: 2%;
+  }
+  .Ray{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  .statImage{
+    width: auto;
+    height: 200px;
+  }
+  .bud{
+    color :#e0e6ee;
+    text-align: center;
+    background-image: url("https://img.freepik.com/free-vector/blue-luxury-gradient-gold-modern-abstract-design-background_343694-2751.jpg?w=1060&t=st=1675878501~exp=1675879101~hmac=b3073b1759a872e00863f00ff72705e07fa011b9f1c8658eb09614a3a3c3fa96");
+    background-size: cover;
+    padding: 20px;
+  }
+  .Tyson{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding: 20px;
+  }
+  #skill{
+    margin: auto;
+    border-radius: 5px;
+    padding: 100px;
+    text-align: center;
+    margin-right: 2%;
+  }
+  .OuterSkill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  .skillgrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+  }
+  .skill_inside{
+    width: auto;
+      padding: 20px;
+      margin: auto;
+      margin-top: 2%;
+      box-shadow: rgba(161, 167, 153, 0.35) 0px 5px 15px;
+      cursor: pointer;
+      border-radius: 20px;
+  }
+  .skill_inside:hover{
+      border: 1px solid green;
+      color: #fee39e;
+      background-image: url("https://img.freepik.com/free-vector/blue-luxury-gradient-gold-modern-abstract-design-background_343694-2751.jpg?w=1060&t=st=1675878501~exp=1675879101~hmac=b3073b1759a872e00863f00ff72705e07fa011b9f1c8658eb09614a3a3c3fa96");
+      background-size: cover;
+      box-shadow: rgba(161, 167, 153, 0.35) 0px 5;
+      cursor: pointer;
   }
 }

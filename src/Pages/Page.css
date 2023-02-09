@@ -1,21 +1,18 @@
 .skillouter
 {
     padding: 20px;
-    box-shadow: 4px 5px 4px 3px rgba(115, 88, 140, 0.137);
 }
-.skillinner{
-    background-color: #93857a;
-    background: rgb(142,139,161);
-    background:teal;
-    height: 100%;
-    margin: auto;
-    align-items: center;
-    padding-bottom: 50px;
+.skillinner
+{
+  border: 2px solid red;
+  border-radius: 10px;
+  background:#81e6d9;
+  color: #101c34;
+  width: 200px;
 }
 .skillinner:hover
-{
-    background: darkgreen;
-    background-image: linear-gradient( 359.4deg,  rgba(12,20,69,1) -16.9%, rgba(71,30,84,1) 119.9% );
+{   color: #af853e;
+    background-image: url("https://img.freepik.com/free-vector/gradient-luxury-background_23-2148999255.jpg?w=996&t=st=1675877514~exp=1675878114~hmac=02aff59bcac13b479d0facaa350f8abbba7003e16875a286f162bb2f0d683e5c")
 }
 .projectouter{
     border: 2.5px solid rgba(200, 137, 230, 0.637);
@@ -24,8 +21,9 @@
 }
 .projectouter:hover{
     border: 3.5px solid rgba(200, 137, 230, 0.637);
-    background: #2b273b;
-    background-image: linear-gradient( 359.4deg,  rgba(12,20,69,1) -16.9%, rgba(71,30,84,1) 119.9% );
+    color: #fee39e;
+    background-image: url("https://img.freepik.com/free-vector/blue-luxury-gradient-gold-modern-abstract-design-background_343694-2751.jpg?w=1060&t=st=1675878501~exp=1675879101~hmac=b3073b1759a872e00863f00ff72705e07fa011b9f1c8658eb09614a3a3c3fa96");
+    background-size: cover;
     transform: scale(1.05);
     transition-property: transform;
     transition-duration: 1.5s;

@@ -1,8 +1,7 @@
-import { Box, Button, Image, Text } from "@chakra-ui/react";
+import { Box, Button,Heading, Image, Text } from "@chakra-ui/react";
 import { BsGithub } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
-
-
+import '../App.css'
 function Project()
 {
     let projectdata= [
@@ -35,12 +34,12 @@ function Project()
         },
 
     ]
-    return <Box id="Project" w="full" bg="#93857a" color="#ffffff" p="30px 0px" textAlign="center" pt="100px">
+    return <Box id="project" w="full" color="#ffffff" p="30px 0px" textAlign="center" pt="100px">
         <Box w="85%" m="auto">
-            <Text mb="25px" textAlign="center" fontWeight="400" fontSize={["3xl", "4xl", "5xl"]}>Projects</Text>
+        <Heading textAlign="center" p={"10px"} pb={10} as='h2' size='xl'>PROJECT</Heading>
             <Box display="grid" gap="50px" gridTemplateColumns= "repeat(1, 1fr)">
-                {projectdata && projectdata.map((project)=> {
-                    return <Box className="projectouter">
+                {projectdata && projectdata.map((project,index)=> {
+                    return <Box className="projectouter" key={index}>
                                 <Box display={["inline", "inline", "flex"]} justifyContent="space-between">
                                     <Image w={["100%", "97%", "60%"]} m="auto" src={project.img} alt="project-thumbnail" />
                                     <Box w={["100%", "97%", "39%"]} m="auto">
@@ -49,10 +48,10 @@ function Project()
                                         <Text w={["100%", "90%", "70%"]} m="auto" fontSize={["sm", "md", "md"]}>{project.desc}</Text>
                                         <Text w="85%" m="auto" fontSize={["md", "mlgd", "xl"]} fontWeight="bold">Techstacks :-{project.techstack}</Text>
                                         <Box display="flex" w={["100%", "80%", "100%"]} m="auto" justifyContent="space-around">
-                                            {/* <Button  _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", ";g"]} bg="#C1B6DB" color="#13022c" border="none" variant='solid' leftIcon={<BiLinkExternal />}><a href={project.livelink} rel="noreferrer" target="_blank">Live</a></Button>
+                                            {/* <Button  _hover={{bg:"#fee39e", color:"#101c34"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", ";g"]} bg="#C1B6DB" color="#13022c" border="none" variant='solid' leftIcon={<BiLinkExternal />}><a href={project.livelink} rel="noreferrer" target="_blank">Live</a></Button>
                                             <Button _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", "lg"]} bg="#C1B6DB" color="#13022c" border="none" variant='solid' leftIcon={<BsGithub />}><a href={project.gitlink} rel="noreferrer" target="_blank">Github</a></Button> */}
-                                            <Button as='a' target='_blank' href={project.livelink} _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", "lg"]} bg="#C1B6DB" color="#13022c" border="none" variant='solid' leftIcon={<BiLinkExternal />}>Live</Button>
-                                            <Button as='a' target='_blank' href={project.gitlink} _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", "lg"]} bg="#C1B6DB" color="#13022c" border="none" variant='solid' leftIcon={<BsGithub />}>Github</Button>
+                                            <Button as='a' target='_blank' href={project.livelink} _hover={{bg:"#fee39e", color:"#101c34"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", "lg"]} bg="#C1B6DB" color="#13022c" border="none" variant='solid' leftIcon={<BiLinkExternal />}>Live</Button>
+                                            <Button as='a' target='_blank' href={project.gitlink} _hover={{bg:"#fee39e", color:"#101c34"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", "lg"]} bg="#C1B6DB" color="#13022c" border="none" variant='solid' leftIcon={<BsGithub />}>Github</Button>
                                         </Box>
                                     </Box>
                             </Box>
